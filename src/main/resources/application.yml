@@ -1,0 +1,18 @@
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://user:password@localhost:5000}/eureka/
+
+
+---
+spring:
+  profiles: heroku
+  security:
+    user:
+      password: ${eureka.password}
+eureka:
+  instance:
+    hostname: ${DOMAIN_NAME}
+    nonSecurePort: 80
+  password: ${USER_PASSWORD:password}
