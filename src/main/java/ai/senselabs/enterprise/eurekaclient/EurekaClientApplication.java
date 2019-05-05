@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class EurekaClientApplication {
 
-    @RequestMapping("/")
+    @RequestMapping("/hi")
     public String home() {
         return "This is a trivial service that demonstrates how a Eureka Client can register with a Eureka Server";
     }
