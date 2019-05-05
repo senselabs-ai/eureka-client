@@ -11,8 +11,3 @@ spring:
   security:
     user:
       password: ${eureka.password}
-eureka:
-  instance:
-    hostname: ${DOMAIN_NAME}
-    nonSecurePort: 80
-  password: ${USER_PASSWORD:password}
